@@ -125,6 +125,7 @@ When you are done filling the survey, please share it with your Emacs friends!
     - [ ] straight.el
     - [ ] borg
     - [ ] leaf
+    - [ ] use-package
     - [ ] el-get
     - [ ] Nix
     - [ ] git submodules without Borg
