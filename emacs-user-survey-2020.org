@@ -63,20 +63,20 @@ When you are done filling the survey, please share it with your Emacs friends!
 * Is your configuration based on any starter-kit?
    - [ ] I am using vanilla emacs (little to no configuration).
    - [ ] Fully custom configuration (does not exclude taking inspiration from starter-kits)
-   - [ ] Spacemacs - https://github.com/syl20bnr/spacemacs
+   - [ ] Better Defaults - https://github.com/technomancy/better-defaults
+   - [ ] Centaur Emacs - https://github.com/seagle0128/.emacs.d
    - [ ] Doom Emacs - https://github.com/hlissner/doom-emacs
+   - [ ] Emacs Starter Kit - https://github.com/eschulte/emacs-starter-kit
+   - [ ] ergoemacs-mode - https://github.com/ergoemacs/ergoemacs-mode
+   - [ ] Graphene - https://github.com/rdallasgray/graphene
+   - [ ] magnars emacs.d - https://github.com/magnars/.emacs.d
+   - [ ] ohai-emacs - https://github.com/bodil/ohai-emacs
+   - [ ] oh-my-emacs - https://github.com/xiaohanyu/oh-my-emacs
    - [ ] Prelude - https://github.com/bbatsov/prelude
    - [ ] purcell emacs.d - https://github.com/purcell/emacs.d
-   - [ ] magnars emacs.d - https://github.com/magnars/.emacs.d
-   - [ ] Emacs Starter Kit - https://github.com/eschulte/emacs-starter-kit
-   - [ ] oh-my-emacs - https://github.com/xiaohanyu/oh-my-emacs
-   - [ ] Better Defaults - https://github.com/technomancy/better-defaults
-   - [ ] Graphene - https://github.com/rdallasgray/graphene
-   - [ ] ohai-emacs - https://github.com/bodil/ohai-emacs
-   - [ ] ergoemacs-mode - https://github.com/ergoemacs/ergoemacs-mode
    - [ ] Rho Emacs - https://github.com/GChristensen/rho-emacs
    - [ ] Radian - https://github.com/raxod502/radian
-   - [ ] Centaur Emacs - https://github.com/seagle0128/.emacs.d
+   - [ ] Spacemacs - https://github.com/syl20bnr/spacemacs
    - [ ] Other (please specify)
 
 * What keybindings do you use now?
