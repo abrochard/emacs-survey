@@ -1,0 +1,82 @@
+<html>
+  <head>
+    <title>
+      Emacs Survey
+    </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" href="style.css">
+
+    <style>
+	 
+	a {
+		text-decoration: none;
+		color: inherit;
+	}
+	
+	li {
+	  margin-top: 20px;
+	  margin-bottom: 5px;
+	}
+	
+	li a {
+		text-decoration: underline;
+		font-weight: bold;
+	}
+	
+	ul a {
+		text-decoration: underline;
+	}
+
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1><a href="https://emacssurvey.org">Emacs User Survey</a></h1>
+    </div>
+    <div class="content">
+      <h2>FAQ</h2>
+	  During the survey, we got a lot of great feedback and questions.
+	  <ul>
+          <li><a href="#why">What is the point of this survey?</a></li>
+		  As stated in the intro on the <a href="index.html">homepage</a>: help the community have a better understanding of itself and its own diversity in Emacs usage. Emacs has been around for so long, it is fascinating to discover its usage landscape.
+		  <li><a href="#dev">Will this survey dictate future Emacs development decisions?</a></li>
+		  No. Emacs development is done by volunteers who are completely free to choose how they spend their time and do not owe anything. This survey does not pretend to even influence the development, this is for pure usage analysis.
+		  <li><a href="#who">Who are you?</a></li>
+		  Hi, I'm <a href="https://github.com/abrochard">Adrien</a>, the main organizer of the Emacs User Survey. I'm just a guy who really likes Emacs and its community. I also got a lot of help from many people, and I want to recognize the great work of <a href="https://www.reddit.com/user/yyoncho/">u/yyoncho</a> who did a lot of the ground work in <a href="https://www.reddit.com/r/emacs/comments/b2fh4y/help_reviewprovide_feedback_on_state_of_emacs/">his Reddit post</a>.
+		  <li><a href="#data">What are you going to do with that data?</a></li>
+		  Share it back! All data will be made public for anyone to see. I will also try to do some raw analysis to the best of my abilities.
+		  <li><a href="#questions">How were the questions chosen?</a></li>
+		  When I started imagining the project, I formulated a bunch on my own. Then when I took the idea <a href="https://www.reddit.com/r/emacs/comments/j6x7ad/proposal_for_an_emacs_user_survey/">to Reddit</a> and <a href="https://lists.gnu.org/archive/html/emacs-devel/2020-10/msg00394.html">the devel mailing list</a> for feedback, I got a lot more. From that point, I used my best judgement to draft a set of question that seemed meaningful as the first Emacs User Survey.
+		  <li><a href="#missing-question">Why didn't you ask about ....?</a></li>
+		  There is a literal infinite amount of questions one can ask about Emacs. I tried my best to capture something interesting about the community and the usage, and not make the survey too long. There are definitely some great questions that were suggested after that I wish I had included, but they will have to wait for next year. If you think you have a great question, <a href="mailto:contact@emacssurvey.org">shoot me an email</a>.
+		  <li><a href="#two-response-methods">Why two methods to respond?</a></li>
+		  Early on during the preparation of the survey, I had to think about how to collect responses. Modern surveys are done through online platforms which enable users to respond anywhere anytime and with great ease. However, as convenient as they are, these online platforms are not always open source and can cost quite a bit. And most importantly, I felt that a part of the Emacs user-base would not feel comfortable using such platform, especially when Emacs is a herald of free software. So I was stuck between sacrificing ease of use for all respondants or exclude an important part of the community. I took the route of the compromise and tried to do neither by opening both an online form and emails. Obviously it comes with trade offs regarding data merging, but I feel that it is worth it given that it maximizes the total responses collected.
+		  <li><a href="#representative">Can you pretend that your results are representative of the Emacs user base?</a></li>
+		  I don't think that any survey can pretend to be representative or not when we do not know the total population to begin with. However, I tried very hard to maximize the total answers and reduce selection bias, wether by opening responses to both the online form and emails, or sharing and promoting the survey in as many groups as possible.
+		  <li><a href="#js">Why does the online form use Javascript?</a></li>
+		  It is true that it is possible to do an online form with no Javascript at all. However, I think that Javascript contributes overall to a much better experience. For example, it offers better feedback regarding input validation and saves the user session in case of browser crash. My position is that filling out the survey should be as pleasant as possbile. People are choosing to spend their time to do it, we should not ask for more if asking for less is possible. Also, a no-Javascript solution means a homemade solution as all big online forms platform use Javascript. And to me that is just not an option at this point. I am web developer during the day and I know how much time it would cost to build a reliable online survey solution and monitor it during the six weeks the survey runs for. That is simply not a price I am willing to pay, and I find it a much better deal to turn to an online platform that will be safer and much more reliable.
+		  <li><a href="#jotform">Why use jotform and not an open source platform or something with LibreJS?</a></li>
+		  I went through a long vendor exploration phase and finally settled on Jotform because it is the cheapest professional option for the volume I was expecting. I would have liked to use framasoft's solution but it does not allow for over a 1000 responses. I also heard a lot of good about LimeSurvey but their hosted solution is prohibitively expensive, and I am not willing to spend the time to self-host. If you know another vendor that does not require self-hosting and is comparable to Jotform, please let me know.
+		  <li><a href="#email">Why use email?</a></li>
+		  I absolutely wanted to capture the responses of users who preferred not to use the online form version and email stuck me as the best way to do that: it is free, scales nicely, already in use in the Emacs community via the mailing list, and most importantly it is totally Emacs compatible. Someone on their computer can visit emacssurvey.org, download the survey file, fill it out, and email it back, all from within Emacs.
+		  <li><a href="#respond-from-emacs">Why not write an Emacs package to respond?</a></li>
+		  Several people suggested that and I think that it is a neat idea. However, it presents several drawbacks that makes it too risky to be part of the first iteration:
+		  <ul>
+			<li>I will have to write the elisp code, debug, test and maintain</li>
+			<li>the package needs to be compatible will all version of Emacs, even the old ones</li>
+			<li>I will have to write and maintain a backend server to receive submissions for it</li>
+			<li>people wishing to fill out the survey on their mobile device, or simply on a machine without Emacs, would be excluded</li>
+			<li>it adds friction to the process and appears less newcomers-friendly as I am essentially asking people who have just found out about the survey to download and run some elisp code</li>
+		  </ul>
+		  To be clear, I am considering for the next iteration but it needs to be carefully planned and made as inclusive as possible.
+		  <li><a href="#fsf">Why is this project not sponsored by the Free Software Foundation?</a></li>
+		  I reached out on the devel mailing list about the survey during its inception, and based on some disagreements I had there, it is my opinion that the project should pursue on its own for now. My position on the use of Javascript is one of the disagreements, but there was also a strong reluctance to mentioning MELPA on the survey itself for ideological reasons. I do not believe it is the place of the survey to weigh in on any ideology, but rather to collect accurate information, and not mentioning MELPA would hurt the quality of that information. The entire conversation is <a href="https://lists.gnu.org/archive/html/emacs-devel/2020-10/msg00394.html">here</a> if you want more details.
+		  <li><a href="#help-out">How can I help out?</a></li>
+		  Since it went live, the survey has gotten a lot of interest and positive feedback. It's is definitely far from perfect though and I could definitely use some help in the future. If you are interested in helping out, <a href="mailto:contact@emacssurvey.org">let me know</a> and we will figure out how together.
+		  <li><a href="#website-source">I found an issue with the website, where I can report?</a></li>
+		  Please open an issue on <a href="https://github.com/abrochard/emacs-survey">github</a>, or even better, a pull request!
+        </ul>
+    </div>
+  </body>
+</html>
