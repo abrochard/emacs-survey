@@ -1,0 +1,261 @@
+#+TITLE:Emacs User Survey 2020
+
+Please note that all responses will be posted publicly. Do not include personal information. If you want to share something in private, email contact@emacssurvey.org.
+Results will be posted after processing on emacssurvey.org.
+When you are done filling the survey, please share it with your Emacs friends!
+
+* How would you characterize your use of Emacs?
+   - [ ] Use it for work
+   - [ ] I use it for serious "hobby" projects
+   - [ ] I'm just tinkering
+   - [ ] I use it for my studies
+   - [ ] Other (please specify)
+
+* What do you use Emacs for?
+    - [ ] Software development
+    - [ ] Research writing
+    - [ ] Data science
+    - [ ] Writing
+    - [ ] Other (Please specify)
+
+* For how many years have you been using Emacs?
+
+* Which version of Emacs do you primarily use?
+   - [ ] 27
+   - [ ] 26
+   - [ ] 25
+   - [ ] 24
+   - [ ] 23
+   - [ ] master (28)
+   - [ ] gccemacs branch
+   - [ ] remacs fork
+   - [ ] Other (please specify)
+
+* What OS do you primarily use Emacs on?
+    - [ ] GNU/Linux
+    - [ ] Windows
+    - [ ] MacOS
+    - [ ] BSD
+    - [ ] Other (please specify)
+
+* How do you run Emacs?
+    - [ ] daemone monde + emacsclient
+    - [ ] Standalone application
+    - [ ] I don't know
+    - [ ] Both
+    - [ ] Other (please specify)
+
+* How do you use Emacs?
+    - [ ] Graphical Application (GUI)
+    - [ ] Terminal (TUI)
+    - [ ] Both
+    - [ ] Other (please specify)
+
+* If you use Emacs GUI, do you disable any of the following graphical elements?
+   - [ ] tool-bar
+   - [ ] menu-bar
+   - [ ] scroll-bar
+   - [ ] splash screen
+   - [ ] visible-bell
+   - [ ] modeline
+   - [ ] Other (please specify)
+
+* Is your configuration based on any starter-kit?
+   - [ ] I am using vanilla emacs (little to no configuration).
+   - [ ] Fully custom configuration (does not exclude taking inspiration from starter-kits)
+   - [ ] Better Defaults - https://github.com/technomancy/better-defaults
+   - [ ] Centaur Emacs - https://github.com/seagle0128/.emacs.d
+   - [ ] Doom Emacs - https://github.com/hlissner/doom-emacs
+   - [ ] Emacs Starter Kit - https://github.com/eschulte/emacs-starter-kit
+   - [ ] ergoemacs-mode - https://github.com/ergoemacs/ergoemacs-mode
+   - [ ] Graphene - https://github.com/rdallasgray/graphene
+   - [ ] magnars emacs.d - https://github.com/magnars/.emacs.d
+   - [ ] ohai-emacs - https://github.com/bodil/ohai-emacs
+   - [ ] oh-my-emacs - https://github.com/xiaohanyu/oh-my-emacs
+   - [ ] Prelude - https://github.com/bbatsov/prelude
+   - [ ] purcell emacs.d - https://github.com/purcell/emacs.d
+   - [ ] Rho Emacs - https://github.com/GChristensen/rho-emacs
+   - [ ] Radian - https://github.com/raxod502/radian
+   - [ ] Spacemacs - https://github.com/syl20bnr/spacemacs
+   - [ ] Other (please specify)
+
+* What keybindings do you use now?
+   - [ ] Emacs defaults
+   - [ ] Evil/Spacemacs/Doom-Emacs/viper (all the vim-likes)
+   - [ ] CUA-mode
+   - [ ] God-mode
+   - [ ] Other (please specify)
+
+* When you started using Emacs, what keybindings did you use then?
+   - [ ] Emacs defaults
+   - [ ] Evil/Spacemacs/Doom-Emacs/viper (all the vim-likes)
+   - [ ] CUA-mode
+   - [ ] God-mode
+   - [ ] Other (please specify)
+
+* Prior to using Emacs what was your primary editor?
+   - [ ] VIM
+   - [ ] VScode
+   - [ ] Eclipse
+   - [ ] Notepad++
+   - [ ] Sublime
+   - [ ] Intelij
+   - [ ] Other (please specify)
+   - [ ] None
+
+* Describe your org-mode usage
+    - [ ] I use emacs only for org-mode
+    - [ ] daily
+    - [ ] from time to time
+    - [ ] Not a org-mode user
+
+* If you use org-mode, for what purpose?
+
+* Which completion/selection framework do you use?
+   - [ ] helm
+   - [ ] ivy
+   - [ ] ido
+   - [ ] icomplete
+   - [ ] other
+   - [ ] I don't use a completion framework
+
+* How do you manage third-party elisp?
+    - [ ] built-in package.el
+    - [ ] Spacemacs does it for me
+    - [ ] straight.el
+    - [ ] borg
+    - [ ] leaf
+    - [ ] use-package
+    - [ ] el-get
+    - [ ] Nix
+    - [ ] git submodules without Borg
+    - [ ] git subtrees
+    - [ ] git clones
+    - [ ] guix
+    - [ ] quelpa
+    - [ ] cask
+    - [ ] No third-party deps
+    - [ ] other (please specify)
+
+* How do you get Emacs packages(if applicable)?
+    - [ ] Gnu Elpa
+    - [ ] Melpa
+    - [ ] Melpa Stable
+    - [ ] Directly from the source (e. g. using straight)
+    - [ ] Other (please specify)
+
+* Can you list some of your favorite package?
+
+* Which theme do you use?
+
+* What package do you use for error checking?
+   - [ ] Flymake
+   - [ ] Flycheck
+   - [ ] wcheck-mode
+   - [ ] None
+   - [ ] Other (please specify)
+
+* Do you use TRAMP?
+   - [ ] Yes extensively
+   - [ ] Yes occasionally
+   - [ ] No
+   - [ ] Other (please specify)
+
+* Do you use Magit?
+   - [ ] Yes
+   - [ ] No
+   - [ ] Other (please specify)
+
+* What package do you use for project management?
+    - [ ] project.el
+    - [ ] projectile
+    - [ ] Other(mention)
+    - [ ] None
+
+* Do you use a shell/terminal emulator in Emacs?
+    - [ ] eshell
+    - [ ] shell
+    - [ ] term
+    - [ ] ansi-term
+    - [ ] vterm
+    - [ ] other
+
+* Do you use an email client in Emacs?
+    - [ ] Mu4e
+    - [ ] Gnus
+    - [ ] Mutt
+    - [ ] notmuch
+    - [ ] rmail
+    - [ ] MH-E
+    - [ ] Wanderlust
+    - [ ] Mew
+    - [ ] VM
+    - [ ] other
+
+* What is your Elisp proficiency?
+    - [ ] No knowledge
+    - [ ] I copy paste some code here and there, mostly for my configuration
+    - [ ] I can write my own simple functions
+    - [ ] I can write my own packages
+
+* If you use Emacs for programming, which languages do you program in?
+
+* Do you use a language server with lsp-mode or eglot? With what languages?
+
+* Do you use an Emacs debugger interface? What do you use? (Gdb, dap-mode etc)
+
+* Have you ever contributed to GNU Emacs core/Elpa?
+    - [ ] No
+    - [ ] No, but I would if the process were changed (e. g. using github pull requests instead of the mailing list, no papers, etc)
+    - [ ] I do PRs from time to time
+    - [ ] I provide PRs regularly
+    - [ ] I am active contributor/maintainer
+
+* Have you ever contributed to Melpa package?
+    - [ ] No
+    - [ ] No, but I would if the process were changed
+    - [ ] I do PRs/patches from time to time
+    - [ ] I provide PRs/patches regularly
+    - [ ] I am a package maintainer
+
+* Have you ever contributed financially to Emacs development? either via FSF or directly?
+   - [ ] Yes
+   - [ ] No
+   - [ ] Other (please specify)
+
+* What Emacs community forums have you visited in the past year?
+    - [ ] r/emacs
+    - [ ] Emacs mailing list
+    - [ ] irc
+    - [ ] Telegram group
+    - [ ] Emacs meetups
+    - [ ] Emacs Stackexchange
+    - [ ] I follow twitter Emacs related accounts
+    - [ ] Other (please specify)
+
+* What are some of the Emacs improvements you are the most interested in?
+
+* What do you think are Emacs' greatest strengths?
+
+* Can you recall any difficulties you faced initially learning Emacs?
+   Please be as specific and concrete as your memories permit.
+
+* What is the one thing you would like Emacs to do differently?
+
+* How did you hear about this survey?
+   - [ ] r/emacs
+   - [ ] mailing list
+   - [ ] blog post
+   - [ ] someone shared it with me
+   - [ ] Twitter
+   - [ ] Telegram
+   - [ ] IRC
+   - [ ] emacsconf 2020
+   - [ ] Other (please specify)
+
+* If there is another survey in 2021, would you be opposed to it containing optional & general demographics questions?
+   It could include age brackets, gender, country or language
+
+* Do you have a preferred platform for filling out the survey in the future?
+
+* Do you have general feedback about the survey process?

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      Emacs Survey 2020 Results
+    </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Emacs User Survey 2020 Results">
+
+	<link rel="stylesheet" href="/style.css">
+	<style>
+     img {
+       width: 100%;
+       filter: drop-shadow(0 0 0.75rem lightgrey);
+       margin-top: 10px;
+       margin-bottom: 10px;
+     }
+	</style>
+  </head>
+  <body>
+    <div class="header">
+      <h1><a href="https://emacssurvey.org">Emacs User Survey 2020 Results</a></h1>
+    </div>
+    <div class="content">
+      <h2>Questions</h2>
+      <p>For reference, this was <a href="emacs-user-survey-2020.org">the survey questions</a> in org-mode format.</p>
+      <h2>Data</h2>
+      <ul>
+        <li>
+          <a href="Emacs-User-Survey-2020-raw.csv">Raw data</a>
+          <ul>
+            <li>the reconciled data from both webform and email submissions</li>
+            <li>absolutely no change made aside from a few instances where PII and email addresses were redacted</li>
+          </ul>
+        </li>
+        <li>
+          <a href="Emacs-User-Survey-2020-clean.csv">Cleaned up data</a><br>
+          It might get updated in the future, but right now it was derived from the raw data in a best-effort attempt:
+          <ul>
+            <li>removed negative years in "For how many years have you been using Emacs?"</li>
+            <li>unified responses for "How did you hear about this survey?" as Hacker News, Emacs China and Emacs News weren't part of the options</li>
+            <li>unified responses for "Which theme do you use?", especially around spelling</li>
+            <li>general cleanup and unified of responses which only differed by punctuation and casing</li>
+          </ul>
+        </li>
+      </ul>
+      <h2>Statistics about the survey</h2>
+      <ul>
+        <li>7344 total responses across webform & email
+          <ul>
+            <li>7240 webform responses</li>
+            <li>103 emails</li>
+          </ul>
+          <img src="submissions-medium.png">
+        </li>
+        <li>30% of webform submissions were on mobile device</li>
+        <li>average webform completion time was 11 minutes</li>
+        <li>
+          survey opening announcement trending to the top 100 of Hacker News generated a sudden spike in submissions
+          <img src="submissions-over-time.png">
+        </li>
+      </ul>
+      <h2>Analysis</h2>
+      <p>There is a lot of data to look at in many different ways. For now, I performed a simple question-by-question analysis using a <a href="https://github.com/abrochard/emacs-survey/blob/main/2020/Emacs%20User%20Survey%202020.ipynb">Jupyter Notebook</a>.</p>
+      <p>Also, since free text was available for most questions, it can be hard to categorize some of the results. For multiple choice questions, I did a best effort attempt to bundle responses with low cardinality into an "other" section, which can get quite big in some cases! I also did not attempt to graph anything for pure free text questions. I encourage anyone who is curious to inspect the full responses, either in the notebook or looking at the data directly. The omitted free text questions are:
+        <ul>
+          <li>If you use org-mode, for what purpose?</li>
+          <li>Do you use a language server with lsp-mode or eglot? With what languages?</li>
+          <li>Do you use an Emacs debugger interface? What do you use? (Gdb, dap-mode etc)</li>
+          <li>What are some of the Emacs improvements you are the most interested in?</li>
+          <li>What do you think are Emacs' greatest strengths?</li>
+          <li>Can you recall any difficulties you faced initially learning Emacs?</li>
+          <li>What is the one thing you would like Emacs to do differently?</li>
+          <li>If there is another survey in 2021, would you be opposed to it containing optional & general demographics questions?</li>
+          <li>Do you have a preferred platform for filling out the survey in the future?</li>
+          <li>Do you have general feedback about the survey process?</li>
+        </ul>
+      </p>
+
+      <p>Also if you have some cool analysis and want to share it, please <a href="mailto:contact@emacssurvey.org">let us know</a> and we can link to you.</p>
+      <img src="how-would-you-characterize-your-use-of-emacs.png">
+      <img src="what-do-you-use-emacs-for.png">
+      <img src="for-how-many-years-have-you-been-using-emacs.png">
+      <img src="which-version-of-emacs-do-you-primarily-use.png">
+      <img src="which-os-do-you-primarily-use-emacs-on.png">
+      <img src="how-do-you-run-emacs.png">
+      <img src="how-do-you-use-emacs.png">
+      <img src="if-you-use-emacs-gui-do-you-disable-any-of-the-graphical-elements.png">
+      <img src="is-your-configuration-based-on-any-starter-kit.png">
+      <img src="what-keybindings-do-you-use-now.png">
+      <img src="when-you-started-using-emacs-what-keybindings-did-you-use-then.png">
+      <img src="prior-to-using-emacs-what-was-your-primary-editor.png">
+      <img src="describe-your-org-mode-usage.png">
+      <!-- <p>If you use org-mode, for what purpose?</p> -->
+      <img src="which-completionselection-framework-do-you-use.png">
+      <img src="how-do-you-manage-third-party-elisp.png">
+      <img src="how-do-you-get-emacs-packagesif-applicable.png">
+      <img src="can-you-list-some-of-your-favorite-packages.png">
+      <img src="which-theme-do-you-use.png">
+      <img src="what-package-do-you-use-for-error-checking.png">
+      <img src="do-you-use-tramp.png">
+      <img src="do-you-use-magit.png">
+      <img src="what-package-do-you-use-for-project-management.png">
+      <img src="do-you-use-a-shellterminal-emulator-in-emacs.png">
+      <img src="do-you-use-an-email-client-in-emacs.png">
+      <img src="what-is-your-elisp-proficiency.png">
+      <img src="if-you-use-emacs-for-programming-which-languages-do-you-program-in.png">
+      <!-- <p>Do you use a language server with lsp-mode or eglot? With what languages?</p>
+           <p>Do you use an Emacs debugger interface? What do you use? (Gdb, dap-mode etc)</p> -->
+      <img src="have-you-ever-contributed-to-gnu-emacs-coreelpa.png">
+      <img src="have-you-ever-contributed-to-melpa-package.png">
+      <img src="have-you-ever-contributed-financially-to-emacs-development-either-via-fsf-or-directly.png">
+      <img src="what-emacs-community-forums-have-you-visited-in-the-past-year.png">
+      <!-- <p>What are some of the Emacs improvements you are the most interested in?</p>
+           <p>What do you think are Emacs' greatest strengths?</p>
+           <p>Can you recall any difficulties you faced initially learning Emacs?</p>
+           <p>What is the one thing you would like Emacs to do differently?</p> -->
+      <img src="how-did-you-hear-about-this-survey.png">
+      <!-- <p>If there is another survey in 2021, would you be opposed to it containing optional & general demographics questions?</p>
+           <p>Do you have a preferred platform for filling out the survey in the future?</p>
+           <p>Do you have general feedback about the survey process?</p> -->
+    </div>
+  </body>
+</html>
