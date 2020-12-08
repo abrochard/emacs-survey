@@ -1,25 +1,25 @@
 body {
-       margin: 0;
-       font-size: 1.3rem;
-     }
+    margin: 0;
+    font-size: 1.3rem;
+}
 
-     .header {
-	 text-align: center;
-       padding: 8px;
-       border-bottom: 2px purple solid;
-       background: #ccb8d2;
-       margin-bottom: 10px;
-     }
+.header {
+	text-align: center;
+    padding: 8px;
+    border-bottom: 2px purple solid;
+    background: #ccb8d2;
+    margin-bottom: 10px;
+}
 
-     .content {
-       margin: 10px;
-	   max-width: 900px;
-	   margin-left: auto;
-	   margin-right: auto;
-	   padding: 10px;
-     }
-	 
-	 h1 a {
-		text-decoration: none;
-		color: inherit;
-	}
+.content {
+    margin: 10px;
+	max-width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+}
+
+h1 a {
+	text-decoration: none;
+	color: inherit;
+}
